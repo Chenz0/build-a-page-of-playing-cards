@@ -1,0 +1,36 @@
+/* Contenedor de las cartas */
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilo de la carta */
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 180px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+}
+
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg); /* Esto voltea el número de abajo */
+}
